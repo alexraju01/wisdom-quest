@@ -1,0 +1,12 @@
+.container {
+	display: grid;
+	/* background-color: aqua; */
+	width: 100%;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+
+	gap: 2rem;
+}
+
+.Addition {
+	background-color: aquamarine;
+}

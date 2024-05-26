@@ -1,20 +1,23 @@
 {
-  "name": "wisdom-quest",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
-  },
-  "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
-  }
+	"name": "wisdom-quest",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"json-server": "json-server --delay=5000 --watch db.json --port 3001"
+	},
+	"dependencies": {
+		"next": "14.2.3",
+		"react": "^18",
+		"react-dom": "^18",
+		"react-icons": "^5.2.0"
+	},
+	"devDependencies": {
+		"eslint": "^8",
+		"eslint-config-next": "14.2.3",
+		"json-server": "^0.17.4"
+	}
 }
