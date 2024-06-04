@@ -4,7 +4,9 @@ export default function MathCardsPage() {
 	return (
 		<div className={`${styles.textCenter} ${styles.bold} ${styles.title}`}>
 			<h2>Math Topics</h2>
+			{/* <div> */}
 			<TopicList />
+			{/* </div> */}
 		</div>
 	);
 }

@@ -1,0 +1,38 @@
+/* styles/Quiz.module.css */
+.quizContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.questionSection {
+	margin-bottom: 20px;
+}
+
+.questionCount {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.questionText {
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.answerSection {
+	display: flex;
+	flex-direction: column;
+}
+
+.answerButton {
+	margin: 5px 0;
+	padding: 10px 20px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.scoreSection {
+	font-size: 24px;
+}
