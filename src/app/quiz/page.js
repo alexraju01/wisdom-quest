@@ -1,12 +1,10 @@
-"use client";
-import GenerateTopics from "@/components/GenerateTopics/GenerateTopics";
-// import styles from "@/app/quiz/quiz.module.css";
-
-export default function QuizPage() {
+import TopicList from "@/components/topicList/topicList";
+import styles from "@/app/quiz/quiz.module.css";
+export default function MathCardsPage() {
 	return (
-		<main>
-			<h1>Quiz</h1>
-			<GenerateTopics />
-		</main>
+		<div className={`${styles.textCenter} ${styles.bold} ${styles.title}`}>
+			<h2>Math Topics</h2>
+			<TopicList />
+		</div>
 	);
 }
