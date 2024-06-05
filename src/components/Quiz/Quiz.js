@@ -1,17 +1,17 @@
 "use client";
 import styles from "@/components/Quiz/Quiz.module.css";
-import { CreateQuestions } from "@/utils/CreateQuestions";
+import { createQuestions } from "@/utils/createQuestions";
 import { useEffect, useState } from "react";
 
-export const Quiz = () => {
+export const Quiz = ({ operation }) => {
 	const [questions, setQuestions] = useState([]);
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [point, setPoint] = useState(0);
 	const [showPoint, setShowPoint] = useState(false);
 
 	useEffect(() => {
-		setQuestions(CreateQuestions(10));
-	}, []);
+		setQuestions(createQuestions(10, operation));
+	}, [operation]);
 
 	const handleAnswerBtnClick = (isCorrect) => {
 		if (isCorrect) setPoint(point + 1);
@@ -24,7 +24,7 @@ export const Quiz = () => {
 		}
 	};
 	return (
-		<div className={styles.quizContainer}>
+		<div>
 			{showPoint ? (
 				<div className={styles.scoreSection}>
 					You scored {point} out of {questions.length}
